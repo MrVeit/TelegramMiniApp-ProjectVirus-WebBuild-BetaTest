@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Project Virus</title>
+    <meta name="description" content="Infect everyone to become the best virus of them all.">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=true">
+
+    <style>
+        @font-face
+        {
+            font-family: 'Montserrat';
+            src: url('TemplateData/Fonts/Montserrat-Black.ttf') format('truetype');
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        body, html
+        {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('TemplateData/Background.png') no-repeat center center fixed;
+            background-size: cover;
+            flex-direction: column;
+        }
+
+        #game-title
+        {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 35px;
+            color: white;
+            margin: 20px;
+            position: absolute;
+            top: 4vh;
+        }
+
+        #unity-container
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .progress-bar-container
+        {
+            width: 330px;
+            height: auto;
+            position: absolute;
+            bottom: 6vh;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: column;
+        }
+
+        .progress-bar-header
+        {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 12px;
+            color: white;
+            margin-bottom: 7px;
+            text-align: center;
+        }
+
+        .progress-bar-background
+        {
+            width: 100%;
+            height: 10px;
+            background: url('TemplateData/progress-background.png') no-repeat center;
+            background-size: cover;
+            position: relative;
+        }
+
+        .progress-bar
+        {
+            width: 0%;
+            height: 100%;
+            background: url('TemplateData/progress-foreground.png') no-repeat center;
+            background-size: cover;
+            transition: width 0.5s ease;
+        }
+
+        #unity-canvas
+        {
+            width: 100vw;
+            height: 100vh;
+            background: transparent;
+            position: absolute;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <script src="https://sdk.panl.so/panl.js" data-app-id="P-NXPSZNYR"></script>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <div id="unity-container">
+        <div id="game-title">PROJECT VIRUS</div>
+        <div class="progress-bar-container">
+            <div class="progress-bar-header">The first loading is always long, please wait....</div>
+            <div class="progress-bar-background">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+        </div>
+        <canvas id="unity-canvas" width="1080" height="1920" tabindex="0"></canvas>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
