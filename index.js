@@ -15,13 +15,13 @@ document.addEventListener('DOMContentLoaded', function()
     var buildUrl = "Build";
     var loaderUrl = buildUrl + "/TelegramMiniApp-ProjectVirus-WebBuild-BetaTest.loader.js";
     var config = {
-        dataUrl: buildUrl + "/9d87ef0ef773c35d8efa735c824d271a.data.unityweb",
-        frameworkUrl: buildUrl + "/99c8f24b5f4c1418440bfd4fe66190c4.js.unityweb",
-        codeUrl: buildUrl + "/ad276c8e023096d36e0da09e573d823a.wasm.unityweb",
+        dataUrl: buildUrl + "/066b2f7729c630594cd61c5bcec401db.data.unityweb",
+        frameworkUrl: buildUrl + "/3582a7dc0134d6e45fd3a28174e28b74.js.unityweb",
+        codeUrl: buildUrl + "/229e4b7efbe65a216e0c40e613369515.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Dayme Inc",
         productName: "Project Virus",
-        productVersion: "1.1.6"
+        productVersion: "1.1.7"
     };
 
     if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent))
