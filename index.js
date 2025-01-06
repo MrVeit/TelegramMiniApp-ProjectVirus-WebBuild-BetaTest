@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function()
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Dayme Inc",
         productName: "Project Virus",
-        productVersion: "1.3"
+        productVersion: "1.3.1"
     };
 
     if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent))
