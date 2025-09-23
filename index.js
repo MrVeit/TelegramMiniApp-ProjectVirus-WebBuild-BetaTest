@@ -20,8 +20,8 @@ document.addEventListener('DOMContentLoaded', function()
         codeUrl: buildUrl + "/TelegramMiniApp-ProjectVirus-WebBuild-BetaTest.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Dayme Inc",
-        productName: "Project Virus",
-        productVersion: "1.3.1"
+        productName: "Project VRS",
+        productVersion: "1.3.2"
     };
 
     if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent))
