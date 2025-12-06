@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function()
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Dayme Inc",
         productName: "Project VRS",
-        productVersion: "1.3.2"
+        productVersion: "1.3.3"
     };
 
     if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent))
